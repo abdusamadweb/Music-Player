@@ -79,6 +79,7 @@ const Player = ({
     }
   }, [currentSong]);
 
+  
   return (
     <div className="container">
       <div className="player">
