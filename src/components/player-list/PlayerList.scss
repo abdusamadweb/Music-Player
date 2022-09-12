@@ -1,0 +1,36 @@
+.list {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__item {
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: #5a5a5a7e;
+    }
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  &__artist {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #eee;
+  }
+}

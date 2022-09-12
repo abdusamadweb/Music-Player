@@ -1,0 +1,131 @@
+.player {
+  max-width: 600px;
+  width: 100%;
+  height: 65vh;
+  margin: 0 auto;
+
+  &__imgs {
+    height: 260px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    transition: width 0.3s ease,
+    height 0.3s ease;
+    box-shadow: 1px 1px 18px 0px #191919bf;
+
+  }
+
+  .active-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  &__artist {
+    font-weight: 300;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+
+  .inp-wrapper {
+    position: relative;
+
+    .range-up {
+      position: absolute;
+      width: 100%;
+      height: 0px;
+      background: #fff;
+    }
+  }
+
+  &__inp {
+    width: 100%;
+    margin-bottom: 1rem;
+    -webkit-appearance: none;
+
+    &::-webkit-slider-runnable-track {
+      height: 3px;
+      background: #7e7e7e;
+      transition: all 0.3s ease;
+    }
+    
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: none;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #e7e7e7;
+      margin-top: -3.5px;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover::-webkit-slider-runnable-track {
+      background: #dddddd;
+    }
+  }
+
+  .time {
+    span {
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      opacity: 0.7;
+    }
+  }
+
+  .ps {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    &__btn {
+      padding: 18px;
+      border-radius: 50%;
+      background: transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #3d3d3d59;
+      }
+
+      &:active {
+        background: #23222290;
+      }
+
+      .fa-play {
+        left: 3px;
+      }
+
+      i {
+        width: 32px;
+        font-size: 32px;
+        color: #ececec;
+        transition: font-size 0.3s ease;
+      }
+
+      &:active i {
+        font-size: 28px;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
