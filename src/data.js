@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from "uuid";
 function chillHop() {
   return [
     {
-      name: "Under the City Stars",
+      name: "To Lower Woods",
       cover:
         "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
-      artist: "Aso, Middle School, Aviino",
+      artist: "Ødyssee",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10076",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
